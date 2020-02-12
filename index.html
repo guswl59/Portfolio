@@ -1,6 +1,107 @@
+<!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <body class="title">
-    <h3>현지의 포트폴리오</h3>
-  </body>
+<head>
+<meta charset="EUC-KR">
+<title>HyeonJi Portfolio</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+	<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+		$(function(){
+		$(window).scroll(function(){  //스크롤하면 아래 코드 실행
+		       var num = $(this).scrollTop();  // 스크롤값
+		       if( num > 36 ){  // 스크롤을 36이상 했을 때
+		          $(".menu").css("position","fixed");
+		       	  $(".home_txt").css("position", "fixed");
+		       } else {
+		           $(".menu").css("position","absolute");
+		       }
+		  });
+		});
+    </script>
+
+</head>
+<body>
+	<!-- 상단 메뉴바 -->
+	<nav class="nav">
+		<div class="menu">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#project">Project</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Home -->
+	<div id="home" class="home">
+		<div class="home_img">
+			<img src="img/main2.jpg" alt="" class="title">
+		</div>
+		<div class="home_txt">
+			<p>김현지의 포트폴리오</p>
+		</div>
+	</div>
+	
+	<!-- About -->
+	<div id="about" class="about">
+		<div class="about_name"><p>김 현지</p></div>
+		<div class="about_info">
+			<p>
+				<span>Birth</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1995.11.09<br>
+				<span>Phone</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 010.4775.6959<br>
+				<span>E-mail</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; leila26@naver.com<br>
+				<span>Certificate</span> 정보처리기사, 리눅스마스터 2급<br>
+			</p>
+		</div>
+	</div>
+	
+	<!-- Skills -->
+	<div id="skills" class="skills">
+		<div class="skills_name"><p>experience</p></div>
+		<div class="skills_ex">
+			<p>
+				<span><strong>Java</strong></span>, <span><strong>JSP</strong></span>, C, C++, HTML, CSS, XML, Javascript, Jquery, Spring, Android<br>
+				Oracle, MySQL, Eclipse, Android Studio<br>
+				Windows, Linux
+			</p>
+		</div>
+	</div>
+	
+	<!-- Project -->
+	<div id="project" class="project">
+		<br><br>
+		<div class="project_coco">
+			<div class="project_coco_img">
+				<a href="#"><img src="img/CocoNail.png" alt="" width="500px" height="350px"></a>
+			</div>
+			<div class="project_coco_info">
+				<p>
+					<span>CocoNail</span><br><br>
+					개발 기간 : 2019.12.23 ~ 2020.01.17<br>
+					개발 인원 : 개인 프로젝트(1명)<br>
+					JSP, Java, JavaScript, JQuery, MySql를 활용하여 Model 1방식으로 구현한 네일샵 사이트<br><br>
+					<a href="https://github.com/hyeonji-kim95/CocoNail.git">GitHub 바로가기</a>
+				</p>
+			</div>
+		</div>
+		<br>
+		<div class="project_bijou">
+			<div class="project_bijou_img">
+				<a href="#"><img src="img/bijou.png" alt="" width="500px" height="350px"></a>
+			</div>
+			<div class="project_bijou_info">
+				<p>
+					<span>bijou</span><br><br>
+					개발 기간 : 2020.01.31 ~ 진행중<br>
+					개발 인원 : 팀 프로젝트(2명)<br>
+					JSP, Java, JavaScript, JQuery, MySql을 활용하여 Model 2 방식으로 구현한 귀걸이 쇼핑몰 사이트<br><br>
+					<a href="#">GitHub 바로가기</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
