@@ -1,3 +1,245 @@
+@CHARSET "EUC-KR";
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+	padding: 0%;
+	overflow-x:hidden;
+	scroll-begavior: smooth;
+}
+
+/* ---------------------------------------------------------- */
+
+.menu {
+	background:rgba(116, 116, 116, 0.7);
+	border-radius: 10px;
+	/* position: absolute; */
+	padding: 5px 0;
+}
+
+.nav {
+	width: 500px;
+	height: 50px;
+	line-height: inherit;
+	position: fixed;
+	right: 1.25em;
+	vertical-align: middle;
+	z-index: 9999;
+}
+
+.nav ul li {
+	border-radius: 4px;
+	display: inline-block;
+	margin-left: 10px;
+	padding-right: 10px;
+	font-size: 26px;
+	margin-right: 20px;
+}
+
+.nav ul li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nav ul li a:hover {
+	color: #484848;
+}
+
+/* ---------------------------------------------------------- */
+
+
+.home {
+	position:relative; }
+
 .title {
-  background-color: #ff80c0;
+	width:100%;
+	height:auto;
+}
+
+.home_txt {
+	display: table;
+	position:absolute;
+	top: 40%;
+	left: 200px;
+	background:rgba(116, 116, 116, 0.7);
+	border-radius: 10px;
+}
+
+.home_txt p {
+	margin: 0px 40px;
+	padding: 10px;
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: fantasy;
+}
+
+/* ---------------------------------------------------------- */
+
+.about {
+	width: 85%;
+	height: 400px;
+	display: table;
+	padding-left: 15%;
+}
+
+.about_name {
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.about_name p {
+	font-size: 80px;
+	margin-right: 10%;
+	font-family: fantasy;
+}
+
+.about_info {
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.about_info p {
+	padding-left: 20%;
+	font-size: 30px;
+	text-align: left;
+	font-family: inherit;
+}
+
+.about_info p span {
+	color: gray;
+}
+
+/* ---------------------------------------------------------- */
+
+.skills {
+	background-color:rgba(213, 213, 213, 0.8);
+	width: 100%;
+	height: 600px;
+	display: table;
+	padding-left: 15%;
+}
+
+.skills_name {
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.skills_name p {
+	font-size: 50px;
+}
+
+.skills_ex {
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.skills_ex p {
+	font-size: 30px;
+	text-align: center;
+	font-family: inherit;
+	padding-right: 20%;
+}
+
+.skills_ex p span {
+	color: red;
+	font-size: 35px;
+}
+
+/* ---------------------------------------------------------- */
+
+.project {
+	background-color: rgba(0, 0, 30, 0.6);
+	width: 100%;
+	height: 800px;
+	display: table;
+	padding-left: 10%;
+}
+
+.project_coco {
+	width: 80%;
+}
+
+.project_coco_img {
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+	height: 350px;
+	
+}
+
+.project_coco_info {
+	width: 70%;
+	height: 40%;
+	display:table-cell;
+	vertical-align:middle;
+	background-color: #ffffff;
+	padding-left: 5%;
+}
+
+.project_coco_info p span {
+	font-size: 30px;
+}
+
+.project_coco_info p {
+	font-size: 18px;
+	text-align: left;
+	font-family: inherit;
+}
+
+.project_coco_info p a {
+	text-decoration: none;
+	color: #808080;
+	
+}
+
+.project_coco_info p a:HOVER {
+	color: #ff0080;
+}
+
+.project_bijou {
+	width: 80%;
+}
+
+.project_bijou_img {
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+	height: 350px;
+	
+}
+
+.project_bijou_info {
+	width: 70%;
+	height: 40%;
+	display:table-cell;
+	vertical-align:middle;
+	background-color: #ffffff;
+	padding-left: 5%;
+}
+
+.project_bijou_info p span {
+	font-size: 30px;
+}
+
+.project_bijou_info p {
+	font-size: 18px;
+	text-align: left;
+	font-family: inherit;
+}
+
+.project_bijou_info p a {
+	text-decoration: none;
+	color: #808080;
+	
+}
+
+.project_bijou_info p a:HOVER {
+	color: #ff0080;
 }
